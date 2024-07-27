@@ -48,12 +48,12 @@
 
         dLay {
             bindings = <
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &trans  &trans  &trans  &trans    &trans  &trans  &trans  &trans  &trans  &trans
-                        &trans  &trans  &trans    &trans  &trans
-                                &trans  &trans    &trans
+&trans  &trans             &trans              &trans      &trans              &trans    &trans  &trans          &trans          &trans           &trans  &trans
+&trans  &kp C_VOLUME_UP    &kp K_SCROLL_UP     &kp HOME    &kp PAGE_UP         &trans    &trans  &trans          &kp UP_ARROW    &trans           &trans  &trans
+&trans  &kp C_VOLUME_DOWN  &kp K_SCROLL_DOWN   &kp END     &kp PAGE_DOWN       &trans    &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &trans
+&trans  &kp C_MUTE         &kp C_FAST_FORWARD  &kp C_PLAY  &kp C_FAST_FORWARD  &trans    &trans  &trans          &trans          &trans           &trans  &trans
+                                               &trans      &trans              &none     &trans  &trans
+                                                           &trans              &trans    &trans
             >;
         };
     };
