@@ -7,6 +7,3 @@ The keymap is based on daily work/entertainment flow on windows (edge/firefox wi
 4. Signs like @$&* are frequently used, but kept in nLay numbers input to simplify layer structure. I'd assume that requires some practice.
 5. Function keys are widely used in my AHK (Auto Hot Key) scripts as trigger key, thus maintained in nLay for easy access.
 6. Other keymapping are not very different from standard 108 QWERTY layout to ease the new keybaord transfer effort.
-
-
-![image](https://github.com/user-attachments/assets/da8d794b-90a1-41e2-99e0-03c884633e3a)
