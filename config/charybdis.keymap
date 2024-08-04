@@ -37,17 +37,21 @@
                         &trans  &trans    &trans     &trans         &kp N0
                                 &trans    &trans     &trans
             >;
+
+            trackball-bindings = <&tmv_fine>;//精准指针
         };
 
         dLay {
             bindings = <
-&trans  &trans             &trans              &trans      &trans              &trans    &trans  &trans          &trans          &trans           &trans  &trans
-&trans  &kp C_VOLUME_UP    &kp K_SCROLL_UP     &kp HOME    &kp PAGE_UP         &trans    &trans  &trans          &kp UP_ARROW    &trans           &trans  &trans
-&trans  &kp C_VOLUME_DOWN  &kp K_SCROLL_DOWN   &kp END     &kp PAGE_DOWN       &trans    &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &trans
-&trans  &kp C_MUTE         &kp C_FAST_FORWARD  &kp C_PLAY  &kp C_FAST_FORWARD  &trans    &trans  &trans          &trans          &trans           &trans  &trans
-                                               &trans      &trans              &trans    &trans  &tog 3
-                                                           &trans              &trans    &trans
+&trans  &trans             &trans          &trans            &trans         &trans    &trans  &trans          &trans          &trans           &trans  &trans
+&trans  &kp C_VOLUME_UP    &trans          &kp HOME          &kp PAGE_UP    &trans    &trans  &trans          &kp UP_ARROW    &trans           &trans  &trans
+&trans  &kp C_VOLUME_DOWN  &trans          &kp END           &kp PAGE_DOWN  &trans    &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &trans
+&trans  &kp C_MUTE         &kp C_PREVIOUS  &kp C_PLAY_PAUSE  &kp C_NEXT     &trans    &trans  &trans          &trans          &trans           &trans  &trans
+                                           &trans            &trans         &trans    &trans  &tog 3
+                                                             &trans         &trans    &trans
             >;
+
+            trackball-bindings = <&tsl>;//滚轮层
         };
 
         Bluetooth {
@@ -56,7 +60,7 @@
 &none  &none  &none  &none  &none  &none    &none  &none         &none         &none         &none       &none
 &none  &none  &none  &none  &none  &none    &none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_CLR  &bootloader
 &none  &none  &none  &none  &none  &none    &none  &none         &none         &none         &none       &none
-                     &none  &none  &none    &none  &trans
+                     &none  &none  &none    &none  &tog 3
                             &none  &none    &none
             >;
         };
