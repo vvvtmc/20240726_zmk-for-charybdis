@@ -17,12 +17,12 @@
 
         Base {
             bindings = <
-&none            &none  &none  &none             &none        &none    &none  &none        &none      &none    &none      &none
-&mt LA(TAB) TAB  &kp Q  &kp W  &kp E             &kp R        &kp T    &kp Y  &kp U        &kp I      &kp O    &kp P      &kp BACKSPACE
-&kp LEFT_SHIFT   &kp A  &kp S  &kp D             &kp F        &kp G    &kp H  &kp J        &kp K      &kp L    &kp SEMI   &mkp MB1
-&kp LEFT_ALT     &kp Z  &kp X  &kp C             &kp V        &kp B    &kp N  &kp M        &kp COMMA  &kp DOT  &kp SLASH  &kp LEFT_WIN
-                               &kp LEFT_CONTROL  &lt 2 SPACE  &mo 1    &mo 2  &lt 1 ENTER
-                                                 &none        &none    &none
+&none                &none  &none           &none             &none        &none    &none  &none        &none      &none    &none               &none
+&mt LC(LA(TAB)) TAB  &kp Q  &mt LEFT_WIN W  &kp E             &kp R        &kp T    &kp Y  &kp U        &kp I      &kp O    &kp P               &kp BACKSPACE
+&kp LEFT_SHIFT       &kp A  &kp S           &kp D             &kp F        &kp G    &kp H  &kp J        &kp K      &kp L    &mt SEMI PAGE_DOWN  &mkp MB1
+&kp LEFT_ALT         &kp Z  &kp X           &kp C             &kp V        &kp B    &kp N  &kp M        &kp COMMA  &kp DOT  &mt SLASH PAGE_UP   &kp ESC
+                                            &kp LEFT_CONTROL  &lt 2 SPACE  &mo 1    &mo 2  &lt 1 ENTER
+                                                              &none        &none    &none
             >;
 
             trackball-bindings = <&tmv_coarse>;
@@ -30,12 +30,12 @@
 
         nLay {
             bindings = <
-&trans  &trans  &trans  &trans  &trans    &trans     &trans         &trans        &trans        &trans        &trans            &trans
-&trans  &kp F7  &kp F8  &kp F9  &kp F10   &kp F11    &kp GRAVE      &kp N7        &kp N8        &kp N9        &kp MINUS         &kp DELETE
-&trans  &kp F4  &kp F5  &kp F6  &mkp MB2  &trans     &kp BACKSLASH  &kp NUMBER_4  &kp N5        &kp NUMBER_6  &kp EQUAL         &kp SQT
-&trans  &kp F1  &kp F2  &kp F3  &kp F12   &kp ESC    &trans         &kp NUMBER_1  &kp NUMBER_2  &kp NUMBER_3  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
-                        &trans  &trans    &trans     &trans         &kp N0
-                                &trans    &trans     &trans
+&none   &none  &none           &none           &none            &none     &none          &none            &none            &none            &none             &none
+&trans  &none  &none           &kp UP_ARROW    &none            &none     &kp GRAVE      &mt F7 NUMBER_7  &mt F8 NUMBER_8  &mt F9 NUMBER_9  &kp MINUS         &kp DELETE
+&trans  &none  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &none     &kp BACKSLASH  &mt F4 NUMBER_4  &mt F5 NUMBER_5  &mt F6 NUMBER_6  &kp EQUAL         &kp SQT
+&trans  &none  &none           &none           &none            &none     &none          &mt F1 NUMBER_1  &mt F2 NUMBER_2  &mt F3 NUMBER_3  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+                               &trans          &trans           &trans    &trans         &mt F10 N0
+                                               &none            &none     &none
             >;
 
             trackball-bindings = <&tmv_fine>;//精准指针
@@ -43,10 +43,10 @@
 
         dLay {
             bindings = <
-&trans  &trans             &trans          &trans            &trans         &trans    &trans  &trans          &trans          &trans           &trans  &trans
-&trans  &kp C_VOLUME_UP    &trans          &kp HOME          &kp PAGE_UP    &trans    &trans  &trans          &kp UP_ARROW    &trans           &trans  &trans
-&trans  &kp C_VOLUME_DOWN  &trans          &kp END           &kp PAGE_DOWN  &trans    &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans  &trans
-&trans  &kp C_MUTE         &kp C_PREVIOUS  &kp C_PLAY_PAUSE  &kp C_NEXT     &trans    &trans  &trans          &trans          &trans           &trans  &trans
+&none   &trans             &trans          &trans            &trans         &trans    &trans  &trans          &trans          &trans        &none      &none
+&trans  &kp C_VOLUME_UP    &trans          &kp HOME          &kp PAGE_UP    &trans    &trans  &trans          &trans          &trans        &trans     &trans
+&trans  &kp C_VOLUME_DOWN  &trans          &kp END           &kp PAGE_DOWN  &trans    &trans  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp UP_ARROW  &kp RIGHT  &trans
+&trans  &kp C_MUTE         &kp C_PREVIOUS  &kp C_PLAY_PAUSE  &kp C_NEXT     &trans    &trans  &trans          &trans          &trans        &trans     &trans
                                            &trans            &trans         &trans    &trans  &tog 3
                                                              &trans         &trans    &trans
             >;
