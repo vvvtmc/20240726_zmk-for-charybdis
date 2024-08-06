@@ -35,7 +35,7 @@
 &none   &none              &none           &none           &none            &none       &none                                   &none            &none            &none            &none             &none
 &trans  &kp C_VOLUME_UP    &trans          &kp UP_ARROW    &trans           &trans      &kp GRAVE                               &mt F7 NUMBER_7  &mt F8 NUMBER_8  &mt F9 NUMBER_9  &kp MINUS         &kp DELETE
 &trans  &kp C_VOLUME_DOWN  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &mkp MB2    &mt ASTERISK SLASH                      &mt F4 NUMBER_4  &mt F5 NUMBER_5  &mt F6 NUMBER_6  &mt PLUS EQUAL    &kp SQT
-&trans  &kp BACKSLASH      &none           &none           &none            &tog 2      &mt RIGHT_PARENTHESIS LEFT_PARENTHESIS  &mt F1 NUMBER_1  &mt F2 NUMBER_2  &mt F3 NUMBER_3  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
+&trans  &kp BACKSLASH      &none           &none           &none            &to 2       &mt RIGHT_PARENTHESIS LEFT_PARENTHESIS  &mt F1 NUMBER_1  &mt F2 NUMBER_2  &mt F3 NUMBER_3  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
                                            &trans          &trans           &trans      &trans                                  &mt F10 N0
                                                            &none            &none       &none
             >;
@@ -48,7 +48,7 @@
 &none  &none  &none  &none  &none  &none       &none  &none           &none         &none         &none       &none
 &none  &none  &none  &none  &none  &none       &none  &none           &none         &none         &none       &none
 &none  &none  &none  &none  &none  &mkp MB1    &none  &bt BT_SEL 0    &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_CLR  &kp A
-&none  &none  &none  &none  &none  &none       &none  &bt BT_CLR_ALL  &bootloader   &none         &none       &none
+&none  &none  &none  &none  &to 0  &none       &none  &bt BT_CLR_ALL  &bootloader   &none         &none       &none
                      &none  &none  &none       &none  &none
                             &none  &none       &none
             >;
