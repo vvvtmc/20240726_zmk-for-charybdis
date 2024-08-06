@@ -12,17 +12,29 @@
 &mt { flavor = "tap-preferred"; };
 
 / {
-    combos { compatible = "zmk,combos"; };
+    combos {
+        compatible = "zmk,combos";
+
+        MouseLClick {
+            bindings = <&mkp MB1>;
+            key-positions = <31 32>;
+        };
+
+        MouseLClick2 {
+            bindings = <&mkp MB1>;
+            key-positions = <27 28>;
+        };
+    };
 
     keymap {
         compatible = "zmk,keymap";
 
         Base {
             bindings = <
-&none                &none           &none           &none             &none           &none       &none             &none             &none               &none                  &none               &none
-&mt LC(LA(TAB)) TAB  &mt NUMBER_1 Q  &mt NUMBER_2 W  &mt NUMBER_3 E    &mt NUMBER_4 R  &mt N5 T    &mt NUMBER_6 Y    &mt N7 U          &mt N8 I            &mt N9 O               &mt N0 P            &kp BACKSPACE
-&kp LEFT_SHIFT       &mt END A       &kp S           &kp D             &kp F           &kp G       &mt LEFT_ARROW H  &mt DOWN_ARROW J  &mt UP_ARROW K      &mt RIGHT_ARROW L      &mt SEMI PAGE_DOWN  &mkp MB1
-&kp LEFT_ALT         &mt HOME Z      &kp X           &kp C             &mt F8 V        &kp B       &kp N             &mt LCTRL M       &mt LEFT_ALT COMMA  &mt LEFT_SHIFT PERIOD  &mt SLASH PAGE_UP   &mt LEFT_WIN ESC
+&none                &none           &none           &none             &none           &none       &none             &none             &none                 &none                &none               &none
+&mt LC(LA(TAB)) TAB  &mt NUMBER_1 Q  &mt NUMBER_2 W  &mt NUMBER_3 E    &mt NUMBER_4 R  &mt N5 T    &mt NUMBER_6 Y    &mt N7 U          &mt N8 I              &mt N9 O             &mt N0 P            &kp BACKSPACE
+&kp LEFT_SHIFT       &mt END A       &kp S           &kp D             &kp F           &kp G       &mt LEFT_ARROW H  &mt DOWN_ARROW J  &mt UP_ARROW K        &mt RIGHT_ARROW L    &mt SEMI PAGE_DOWN  &mkp MB1
+&kp LEFT_ALT         &mt HOME Z      &kp X           &kp C             &mt F8 V        &kp B       &kp N             &mt LCTRL M       &mt LEFT_SHIFT COMMA  &mt LEFT_ALT PERIOD  &mt SLASH PAGE_UP   &mt LEFT_WIN ESC
                                                      &kp LEFT_CONTROL  &kp SPACE       &mo 1       &mo 1             &kp RETURN
                                                                        &none           &none       &none
             >;
