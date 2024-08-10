@@ -16,13 +16,18 @@
         compatible = "zmk,combos";
 
         MouseLClick {
-            bindings = <&mkp MB1>;
+            bindings = <&mkp MB2>;
             key-positions = <31 32>;
         };
 
         MouseLClick2 {
             bindings = <&mkp MB1>;
             key-positions = <27 28>;
+        };
+
+        Esc {
+            bindings = <&kp ESCAPE>;
+            key-positions = <13 14>;
         };
     };
 
@@ -31,12 +36,12 @@
 
         Base {
             bindings = <
-&none                &none           &none           &none             &none           &none       &none             &none             &none                 &none                &none               &none
-&mt LC(LA(TAB)) TAB  &mt NUMBER_1 Q  &mt NUMBER_2 W  &mt NUMBER_3 E    &mt NUMBER_4 R  &mt N5 T    &mt NUMBER_6 Y    &mt N7 U          &mt N8 I              &mt N9 O             &mt N0 P            &kp BACKSPACE
-&kp LEFT_SHIFT       &mt END A       &kp S           &kp D             &kp F           &kp G       &mt LEFT_ARROW H  &mt DOWN_ARROW J  &mt UP_ARROW K        &mt RIGHT_ARROW L    &mt SEMI PAGE_DOWN  &mkp MB1
-&kp LEFT_ALT         &mt HOME Z      &kp X           &kp C             &mt F8 V        &kp B       &kp N             &mt LCTRL M       &mt LEFT_SHIFT COMMA  &mt LEFT_ALT PERIOD  &mt SLASH PAGE_UP   &mt LEFT_WIN ESC
-                                                     &kp LEFT_CONTROL  &kp SPACE       &mo 1       &mo 1             &kp RETURN
-                                                                       &none           &none       &none
+&none                      &none           &none           &none             &none                 &none             &none             &none                &none                 &none                &none                      &none
+&mt LC(LA(TAB)) TAB        &mt NUMBER_1 Q  &mt NUMBER_2 W  &mt NUMBER_3 E    &mt NUMBER_4 R        &mt N5 T          &mt NUMBER_6 Y    &mt N7 U             &mt N8 I              &mt N9 O             &mt N0 P                   &kp DELETE
+&mt SLASH PAGE_UP          &kp A           &kp S           &kp D             &kp F                 &mt F8 G          &mt LEFT_ARROW H  &mt DOWN_ARROW J     &mt UP_ARROW K        &mt RIGHT_ARROW L    &mt SEMI PAGE_DOWN         &kp BACKSPACE
+&mt LEFT_PARENTHESIS HOME  &mt LA(F4) Z    &kp X           &kp C             &kp V                 &mt LEFT_WIN B    &kp N             &mt LCTRL M          &mt LEFT_SHIFT COMMA  &mt LEFT_ALT PERIOD  &mt RIGHT_PARENTHESIS END  &none
+                                                           &kp LEFT_CONTROL  &mt LEFT_SHIFT SPACE  &mo 1             &mo 1             &mt LEFT_ALT RETURN
+                                                                             &none                 &none             &none
             >;
 
             trackball-bindings = <&tmv_coarse>;
@@ -44,12 +49,12 @@
 
         nLay {
             bindings = <
-&none   &none              &none           &none           &none            &none       &none                                   &none            &none            &none            &none             &none
-&trans  &kp C_VOLUME_UP    &trans          &kp UP_ARROW    &trans           &trans      &kp GRAVE                               &mt F7 NUMBER_7  &mt F8 NUMBER_8  &mt F9 NUMBER_9  &kp MINUS         &kp DELETE
-&trans  &kp C_VOLUME_DOWN  &kp LEFT_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &mkp MB2    &mt ASTERISK SLASH                      &mt F4 NUMBER_4  &mt F5 NUMBER_5  &mt F6 NUMBER_6  &mt PLUS EQUAL    &kp SQT
-&trans  &kp BACKSLASH      &none           &none           &none            &to 2       &mt RIGHT_PARENTHESIS LEFT_PARENTHESIS  &mt F1 NUMBER_1  &mt F2 NUMBER_2  &mt F3 NUMBER_3  &kp LEFT_BRACKET  &kp RIGHT_BRACKET
-                                           &trans          &trans           &trans      &trans                                  &mt F10 N0
-                                                           &none            &none       &none
+&trans  &trans                         &trans  &trans  &trans  &trans    &trans                                  &trans           &trans           &trans           &trans                          &trans
+&trans  &mt C_VOLUME_UP C_VOLUME_DOWN  &trans  &trans  &trans  &trans    &mt GRAVE SQT                           &mt F7 NUMBER_7  &mt F8 NUMBER_8  &mt F9 NUMBER_9  &kp MINUS                       &trans
+&trans  &trans                         &trans  &trans  &trans  &trans    &mt ASTERISK SLASH                      &mt F4 NUMBER_4  &mt F5 NUMBER_5  &mt F6 NUMBER_6  &mt PLUS EQUAL                  &trans
+&trans  &kp BACKSLASH                  &trans  &trans  &trans  &to 2     &mt RIGHT_PARENTHESIS LEFT_PARENTHESIS  &mt F1 NUMBER_1  &mt F2 NUMBER_2  &mt F3 NUMBER_3  &mt RIGHT_BRACKET LEFT_BRACKET  &trans
+                                               &trans  &trans  &trans    &trans                                  &mt F10 N0
+                                                       &trans  &trans    &trans
             >;
 
             trackball-bindings = <&tmv_fine>;//精准指针
