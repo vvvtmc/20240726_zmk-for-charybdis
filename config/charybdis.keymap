@@ -13,12 +13,12 @@
 
 / {
 
-    behaviors {
+behaviors {
         td0: tap_dance_0 {
             compatible = "zmk,behavior-tap-dance";
             #binding-cells = <0>;
             tapping-term-ms = <200>;
-            bindings = <&kp BACKSPACE>, <&kp DELETE>;
+            bindings = <&kp N1>, <&kp N2>, <&kp N3>;
         };
     };
 
