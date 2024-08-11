@@ -13,13 +13,12 @@
 
 / {
 
-behaviors {
-        td0: tap_dance_0 {
-            compatible = "zmk,behavior-tap-dance";
-            #binding-cells = <0>;
-            tapping-term-ms = <200>;
-            bindings = <&kp N1>, <&kp N2>, <&kp N3>;
-        };
+    tdDelBslh: DEL_BSLASH {
+      compatible = "zmk,behavior-tap-dance";
+      label = "delbslh";
+      #binding-cells = <0>;
+      tapping-term-ms = <300>;
+      bindings = <&kp BSPC>, <&kp DEL>, <&kp BSLH>;
     };
 
     combos {
