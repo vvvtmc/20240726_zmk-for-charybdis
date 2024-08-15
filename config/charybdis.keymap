@@ -64,7 +64,7 @@
 &none                &none           &none           &none             &none                 &none             &none             &none                &none                 &none                &none                    &none
 &mt LC(LA(TAB)) TAB  &mt NUMBER_1 Q  &mt NUMBER_2 W  &mt NUMBER_3 E    &mt NUMBER_4 R        &mt N5 T          &mt NUMBER_6 Y    &mt N7 U             &mt N8 I              &mt N9 O             &mt N0 P                 &kp DELETE
 &mt GRAVE PAGE_UP    &kp A           &kp S           &kp D             &kp F                 &mt F8 G          &mt LEFT_ARROW H  &mt DOWN_ARROW J     &mt UP_ARROW K        &mt RIGHT_ARROW L    &mt SEMICOLON PAGE_DOWN  &kp BACKSPACE
-&mt END SQT          &mt LA(F4) Z    &kp X           &kp C             &kp V                 &mt LEFT_WIN B    &kp N             &mt LCTRL M          &mt LEFT_SHIFT COMMA  &mt LEFT_ALT PERIOD  &mt END SLASH            &mt RIGHT_PARENTHESIS LEFT_PARENTHESIS
+&mt HOME SQT         &mt LA(F4) Z    &kp X           &kp C             &kp V                 &mt LEFT_WIN B    &kp N             &mt LCTRL M          &mt LEFT_SHIFT COMMA  &mt LEFT_ALT PERIOD  &mt END SLASH            &mt RIGHT_PARENTHESIS LEFT_PARENTHESIS
                                                      &kp LEFT_CONTROL  &mt LEFT_SHIFT SPACE  &mo 1             &mo 1             &mt LEFT_ALT RETURN
                                                                        &none                 &none             &none
             >;
@@ -74,12 +74,12 @@
 
         nLay {
             bindings = <
-&trans  &trans          &trans        &trans          &trans           &trans                           &trans                &trans           &trans           &trans           &trans                          &trans
-&trans  &trans          &trans        &trans          &trans           &trans                           &mt MINUS PLUS        &mt F7 NUMBER_7  &mt F8 NUMBER_8  &mt F9 NUMBER_9  &kp EQUAL                       &trans
-&trans  &kp LEFT_ARROW  &kp UP_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &mt C_VOLUME_UP C_VOLUME_DOWN    &mt ASTERISK SLASH    &mt F4 NUMBER_4  &mt F5 NUMBER_5  &mt F6 NUMBER_6  &mt F10 N0                      &trans
-&trans  &trans          &to 2         &trans          &trans           &trans                           &kp NON_US_BACKSLASH  &mt F1 NUMBER_1  &mt F2 NUMBER_2  &mt F3 NUMBER_3  &mt RIGHT_BRACKET LEFT_BRACKET  &trans
-                                      &trans          &trans           &trans                           &trans                &trans
-                                                      &trans           &trans                           &trans
+&trans  &trans          &trans        &trans          &trans           &trans                            &trans        &trans           &trans           &trans           &trans      &trans
+&trans  &trans          &trans        &trans          &trans           &trans                            &kp PLUS      &mt F7 NUMBER_7  &mt F8 NUMBER_8  &mt F9 NUMBER_9  &kp MINUS   &kp EQUAL
+&trans  &kp LEFT_ARROW  &kp UP_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &mt C_VOLUME_UP C_VOLUME_DOWN     &kp DOT       &mt F4 NUMBER_4  &mt F5 NUMBER_5  &mt F6 NUMBER_6  &mt F10 N0  &trans
+&trans  &trans          &to 2         &trans          &kp BACKSLASH    &mt RIGHT_BRACKET LEFT_BRACKET    &kp ASTERISK  &mt F1 NUMBER_1  &mt F2 NUMBER_2  &mt F3 NUMBER_3  &kp SLASH   &trans
+                                      &trans          &trans           &trans                            &trans        &trans
+                                                      &trans           &trans                            &trans
             >;
 
             trackball-bindings = <&tmv_fine>;//精准指针
