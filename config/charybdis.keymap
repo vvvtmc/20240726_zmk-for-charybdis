@@ -44,8 +44,18 @@
         };
 
         XC_to_Tab {
-            bindings = <&mt LA(TAB) TAB>;
+            bindings = <&mt LA(LC(TAB)) TAB>;
             key-positions = <38 39>;
+        };
+
+        small_para_combo {
+            bindings = <&small_para>;
+            key-positions = <29 30>;
+        };
+
+        mid_brkt_combo {
+            bindings = <&mid_brkt>;
+            key-positions = <17 18>;
         };
     };
 
@@ -81,9 +91,9 @@
         Base {
             bindings = <
 &none              &none           &none           &none             &none                 &none             &none                   &none                    &none                   &none                     &none                    &none
-&none              &mt NUMBER_1 Q  &mt NUMBER_2 W  &mt NUMBER_3 E    &mt NUMBER_4 R        &mt N5 T          &mt NUMBER_6 Y          &mt N7 U                 &mt N8 I                &mt N9 O                  &mt N0 P                 &kp DELETE
-&mt GRAVE PAGE_UP  &kp A           &kp S           &kp D             &kp F                 &mt F8 G          &mt LEFT_ARROW H        &mt DOWN_ARROW J         &mt UP_ARROW K          &mt RIGHT_ARROW L         &mt SEMICOLON PAGE_DOWN  &kp BACKSPACE
-&mt HOME SQT       &mt LA(F4) Z    &kp X           &kp C             &kp V                 &mt LEFT_WIN B    &mt LEFT_PARENTHESIS N  &mt RIGHT_PARENTHESIS M  &mt LEFT_BRACKET COMMA  &mt RIGHT_BRACKET PERIOD  &mt END SLASH            &none
+&kp TAB            &mt NUMBER_1 Q  &mt NUMBER_2 W  &mt NUMBER_3 E    &mt NUMBER_4 R        &mt N5 T          &mt NUMBER_6 Y          &mt N7 U                 &mt N8 I                &mt N9 O                  &mt N0 P                 &kp DELETE
+&mt GRAVE PAGE_UP  &kp A           &kp S           &kp D             &kp F                 &mt LEFT_WIN G    &mt LEFT_ARROW H        &mt DOWN_ARROW J         &mt UP_ARROW K          &mt RIGHT_ARROW L         &mt SEMICOLON PAGE_DOWN  &kp BACKSPACE
+&mt HOME SQT       &mt LA(F4) Z    &kp X           &kp C             &mt SQT V             &mt F8 B          &mt LEFT_PARENTHESIS N  &mt RIGHT_PARENTHESIS M  &mt LEFT_BRACKET COMMA  &mt RIGHT_BRACKET PERIOD  &mt END SLASH            &none
                                                    &kp LEFT_CONTROL  &mt LEFT_SHIFT SPACE  &mo 1             &mo 1                   &mt LEFT_ALT RETURN
                                                                      &none                 &none             &none
             >;
