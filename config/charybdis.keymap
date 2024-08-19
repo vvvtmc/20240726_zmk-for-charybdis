@@ -23,18 +23,18 @@
     combos {
         compatible = "zmk,combos";
 
-        MouseLClick {
-            bindings = <&mkp MB2>;
+        bspc_combo {
+            bindings = <&kp BACKSPACE>;
             key-positions = <31 32>;
         };
 
-        MouseLClick2 {
+        MouseLClick {
             bindings = <&mkp MB1>;
             key-positions = <27 28>;
         };
 
         Esc {
-            bindings = <&kp ESCAPE>;
+            bindings = <&mt LA(F4) ESCAPE>;
             key-positions = <13 14>;
         };
 
@@ -45,7 +45,7 @@
 
         XC_to_Tab {
             bindings = <&mt LA(LC(TAB)) TAB>;
-            key-positions = <38 39>;
+            key-positions = <26 27>;
         };
 
         small_para_combo {
@@ -60,22 +60,17 @@
 
         del_combo {
             bindings = <&kp DELETE>;
-            key-positions = <43 44 45>;
+            key-positions = <31 33 32>;
         };
 
-        backspace_combo {
-            bindings = <&kp BACKSPACE>;
+        mouse2 {
+            bindings = <&mkp MB2>;
             key-positions = <43 44>;
         };
 
         quote_combo {
             bindings = <&double_quote>;
             key-positions = <40 43>;
-        };
-
-        altF4 {
-            bindings = <&kp LA(F4)>;
-            key-positions = <37 39>;
         };
     };
 
