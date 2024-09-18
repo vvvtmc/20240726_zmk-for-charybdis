@@ -24,63 +24,76 @@
         compatible = "zmk,combos";
 
         bspc_combo {
-            bindings = <&kp ENTER>;
+            bindings = <&kp BACKSPACE>;
             key-positions = <31 32>;
+            timeout-ms = <30>; 
+            layers = <1 2>;
         };
 
         MouseLClick {
             bindings = <&mkp MB1>;
             key-positions = <27 28>;
+            timeout-ms = <30>; 
         };
 
         Esc {
             bindings = <&mt LA(F4) ESCAPE>;
             key-positions = <13 14>;
+            timeout-ms = <30>; 
         };
 
         princ_combo {
             bindings = <&princ>;
             key-positions = <19 20 21>;
+            timeout-ms = <30>; 
         };
 
         XC_to_Tab {
             bindings = <&mt LA(LC(TAB)) TAB>;
             key-positions = <26 27>;
+            timeout-ms = <30>; 
         };
 
         small_para_combo {
             bindings = <&small_para>;
             key-positions = <28 31>;
+            timeout-ms = <30>; 
         };
 
         mid_brkt_combo {
             bindings = <&mid_brkt>;
             key-positions = <29 30>;
+            timeout-ms = <30>; 
         };
 
         del_combo {
             bindings = <&kp DELETE>;
             key-positions = <33 32>;
+            timeout-ms = <30>; 
         };
 
         mouse2 {
             bindings = <&mkp MB2>;
             key-positions = <43 44>;
+            timeout-ms = <30>; 
         };
 
         quote_combo {
             bindings = <&double_quote>;
             key-positions = <40 43>;
+            timeout-ms = <30>; 
         };
 
         alt_combo {
             bindings = <&kp LEFT_ALT>;
             key-positions = <33 34>;
+            timeout-ms = <30>; 
         };
 
         Bluetooth_layer {
             bindings = <&mo 3>;
             key-positions = <13 22>;
+            timeout-ms = <30>; 
             layers = <2>;
         };
     };
