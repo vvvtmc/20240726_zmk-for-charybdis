@@ -105,16 +105,19 @@
         shift_combo {
             bindings = <&sk LSHIFT>;
             key-positions = <44 45>;
+            timeout-ms = <30>;
         };
 
         ctrl_combo {
             bindings = <&sk LCTRL>;
             key-positions = <43 44>;
+            timeout-ms = <30>;
         };
 
         alt_combo {
             bindings = <&sk LEFT_ALT>;
             key-positions = <21 22>;
+            timeout-ms = <30>;
         };
     };
 
