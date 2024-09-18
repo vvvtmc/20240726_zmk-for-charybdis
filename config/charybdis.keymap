@@ -83,8 +83,8 @@
             timeout-ms = <30>;
         };
 
-        alt_combo {
-            bindings = <&kp LEFT_ALT>;
+        win_combo {
+            bindings = <&kp LEFT_WIN>;
             key-positions = <45 46>;
             timeout-ms = <30>;
         };
@@ -100,6 +100,21 @@
             bindings = <&kp ENTER>;
             key-positions = <33 34>;
             timeout-ms = <30>;
+        };
+
+        shift_combo {
+            bindings = <&sk LSHIFT>;
+            key-positions = <44 45>;
+        };
+
+        ctrl_combo {
+            bindings = <&sk LCTRL>;
+            key-positions = <43 44>;
+        };
+
+        alt_combo {
+            bindings = <&sk LEFT_ALT>;
+            key-positions = <21 22>;
         };
     };
 
@@ -167,10 +182,10 @@
 
         NAV {
             bindings = <
-&trans  &trans          &trans        &trans          &trans           &trans    &trans  &trans         &trans          &trans        &trans        &trans
-&trans  &trans          &trans        &trans          &trans           &trans    &trans  &trans         &trans          &trans        &trans        &trans
-&trans  &kp LEFT_ARROW  &kp UP_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans    &trans  &trans         &trans          &trans        &trans        &trans
-&trans  &kp HOME        &kp END       &kp PAGE_UP     &kp PAGE_DOWN    &trans    &trans  &trans         &trans          &trans        &trans        &trans
+&trans  &trans          &trans        &trans          &trans           &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans          &trans        &trans          &trans           &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp LEFT_ARROW  &kp UP_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans    &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &kp HOME        &kp END       &kp PAGE_UP     &kp PAGE_DOWN    &trans    &trans  &trans  &trans  &trans  &trans  &trans
                                       &trans          &trans           &trans    &trans  &trans
                                                       &trans           &trans    &trans
             >;
