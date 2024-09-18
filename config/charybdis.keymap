@@ -27,7 +27,6 @@
             bindings = <&kp BACKSPACE>;
             key-positions = <31 32>;
             timeout-ms = <30>;
-            layers = <1 2>;
         };
 
         MouseLClick {
@@ -170,7 +169,7 @@
             bindings = <
 &trans  &trans          &trans        &trans          &trans           &trans    &trans  &trans         &trans          &trans        &trans        &trans
 &trans  &trans          &trans        &trans          &trans           &trans    &trans  &trans         &trans          &trans        &trans        &trans
-&trans  &kp LEFT_ARROW  &kp UP_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans    &trans  &sk LC(LCTRL)  &sk LEFT_SHIFT  &kp LEFT_WIN  &kp LEFT_ALT  &trans
+&trans  &kp LEFT_ARROW  &kp UP_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans    &trans  &trans         &trans          &trans        &trans        &trans
 &trans  &kp HOME        &kp END       &kp PAGE_UP     &kp PAGE_DOWN    &trans    &trans  &trans         &trans          &trans        &trans        &trans
                                       &trans          &trans           &trans    &trans  &trans
                                                       &trans           &trans    &trans
