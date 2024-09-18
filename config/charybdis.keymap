@@ -123,17 +123,28 @@
             trackball-bindings = <&tmv_coarse>;
         };
 
-        nLay {
+        NUM {
             bindings = <
-&trans  &trans          &trans        &trans             &trans           &trans               &trans   &trans           &trans           &trans           &trans         &trans
-&trans  &kp SLASH       &kp ASTERISK  &kp MINUS          &kp PLUS         &kp C_VOLUME_UP      &trans   &mt F7 NUMBER_7  &mt F8 NUMBER_8  &mt F9 NUMBER_9  &trans         &trans
-&trans  &kp LEFT_ARROW  &kp UP_ARROW  &kp DOWN_ARROW     &kp RIGHT_ARROW  &kp C_VOLUME_DOWN    &kp DOT  &mt F4 NUMBER_4  &mt F5 NUMBER_5  &mt F6 NUMBER_6  &mt F10 N0     &trans
-&trans  &mo 2           &trans        &kp DOUBLE_QUOTES  &kp EQUAL        &trans               &trans   &mt F1 NUMBER_1  &mt F2 NUMBER_2  &mt F3 NUMBER_3  &kp BACKSLASH  &trans
-                                      &trans             &trans           &trans               &trans   &trans
-                                                         &trans           &trans               &trans
+&trans  &trans          &trans        &trans             &trans        &trans    &trans   &trans           &trans           &trans           &trans             &trans
+&trans  &kp SLASH       &kp ASTERISK  &kp MINUS          &kp PLUS      &trans    &trans   &mt F7 NUMBER_7  &mt F8 NUMBER_8  &mt F9 NUMBER_9  &mt F11 PERCENT    &trans
+&trans  &kp N0          &kp NUMBER_1  &kp NUMBER_2       &kp NUMBER_3  &trans    &kp DOT  &mt F4 NUMBER_4  &mt F5 NUMBER_5  &mt F6 NUMBER_6  &mt F10 N0         &trans
+&trans  &kp UNDERSCORE  &kp SQT       &kp DOUBLE_QUOTES  &kp EQUAL     &trans    &trans   &mt F1 NUMBER_1  &mt F2 NUMBER_2  &mt F3 NUMBER_3  &mt F12 BACKSLASH  &trans
+                                      &trans             &trans        &trans    &trans   &trans
+                                                         &trans        &trans    &trans
             >;
 
             trackball-bindings = <&tmv_fine>;//精准指针
+        };
+
+        NAV {
+            bindings = <
+&trans  &trans          &trans        &trans          &trans           &trans    &trans  &trans         &trans          &trans        &trans        &trans
+&trans  &trans          &trans        &trans          &trans           &trans    &trans  &trans         &trans          &trans        &trans        &trans
+&trans  &kp LEFT_ARROW  &kp UP_ARROW  &kp DOWN_ARROW  &kp RIGHT_ARROW  &trans    &trans  &sk LC(LCTRL)  &sk LEFT_SHIFT  &kp LEFT_WIN  &kp LEFT_ALT  &trans
+&trans  &kp HOME        &kp END       &kp PAGE_UP     &kp PAGE_DOWN    &trans    &trans  &trans         &trans          &trans        &trans        &trans
+                                      &trans          &trans           &trans    &trans  &trans
+                                                      &trans           &trans    &trans
+            >;
         };
 
         Bluetooth {
