@@ -224,7 +224,7 @@
 &none          &kp SLASH       &kp ASTERISK            &kp MINUS         &kp PLUS         &none          &none      &kp NUMBER_7        &kp NUMBER_8         &kp NUMBER_9           &kp PERCENT      &none
 &double_quote  &mkp MB2        &kp ENTER               &kp BACKSPACE     &mkp MB1         &small_para    &mid_brkt  &kp NUMBER_4        &kp N5               &kp NUMBER_6           &kp NUMBER_0     &big_brkt
 &none          &mt LWIN TILDE  &mt LEFT_ALT AMPERSAND  &mt LSHIFT CARET  &mt LCTRL EQUAL  &none          &none      &mt LCTRL NUMBER_1  &mt LSHIFT NUMBER_2  &mt LEFT_ALT NUMBER_3  &mt LWIN KP_DOT  &none
-                                                       &trans            &trans           &trans         &trans     &trans
+                                                       &trans            &trans           &trans         &trans     &mt LA(F4) ESC
                                                                          &none            &none          &none
             >;
 
