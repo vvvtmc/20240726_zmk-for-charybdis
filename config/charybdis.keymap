@@ -23,137 +23,17 @@
     combos {
         compatible = "zmk,combos";
 
-        bspc_combo {
-            bindings = <&kp BACKSPACE>;
-            key-positions = <31 32>;
-            timeout-ms = <30>;
-        };
-
-        MouseLClick_combo {
-            bindings = <&mkp MB1>;
-            key-positions = <27 28>;
-            timeout-ms = <30>;
-        };
-
-        Esc_close_combo {
-            bindings = <&mt LA(F4) ESCAPE>;
-            key-positions = <13 14>;
-            timeout-ms = <30>;
-        };
-
         princ_combo {
             bindings = <&princ>;
             key-positions = <19 20 21>;
             timeout-ms = <30>;
         };
 
-        tab_swapper_combo {
-            bindings = <&mt LA(LC(TAB)) TAB>;
-            key-positions = <26 27>;
-            timeout-ms = <30>;
-        };
-
-        small_para_combo {
-            bindings = <&small_para>;
-            key-positions = <28 31>;
-            timeout-ms = <30>;
-        };
-
-        mid_brkt_combo {
-            bindings = <&mid_brkt>;
-            key-positions = <29 30>;
-            timeout-ms = <30>;
-        };
-
-        del_combo {
-            bindings = <&kp DELETE>;
-            key-positions = <33 34>;
-            timeout-ms = <30>;
-        };
-
-        mouse_Rclick_combo {
-            bindings = <&mkp MB2>;
-            key-positions = <19 20>;
-            timeout-ms = <30>;
-        };
-
-        quote_combo {
-            bindings = <&double_quote>;
-            key-positions = <40 43>;
-            timeout-ms = <30>;
-        };
-
-        r_win_combo {
-            bindings = <&kp RIGHT_WIN>;
-            key-positions = <45 46>;
-            timeout-ms = <30>;
-        };
-
         Bluetooth_layer {
-            bindings = <&mo 4>;
+            bindings = <&bootloader>;
             key-positions = <13 22>;
             timeout-ms = <30>;
             layers = <2>;
-        };
-
-        enter_combo {
-            bindings = <&kp ENTER>;
-            key-positions = <33 32>;
-            timeout-ms = <30>;
-        };
-
-        r_shift_combo {
-            bindings = <&sk RIGHT_SHIFT>;
-            key-positions = <44 45>;
-            timeout-ms = <30>;
-        };
-
-        r_ctrl_combo {
-            bindings = <&kp RCTRL>;
-            key-positions = <43 44>;
-            timeout-ms = <30>;
-        };
-
-        r_alt_combo {
-            bindings = <&kp RIGHT_ALT>;
-            key-positions = <44 46>;
-            timeout-ms = <30>;
-        };
-
-        l_ctrl_combo {
-            bindings = <&kp LCTRL>;
-            key-positions = <40 39>;
-            timeout-ms = <30>;
-        };
-
-        l_shift_combo {
-            bindings = <&sk LEFT_SHIFT>;
-            key-positions = <39 38>;
-            timeout-ms = <30>;
-        };
-
-        l_win_combo {
-            bindings = <&kp LEFT_WIN>;
-            key-positions = <37 38>;
-            timeout-ms = <30>;
-        };
-
-        l_alt_combo {
-            bindings = <&kp LEFT_ALT>;
-            key-positions = <37 39>;
-            timeout-ms = <30>;
-        };
-
-        r_ctrlshift_combo {
-            bindings = <&kp RC(RIGHT_SHIFT)>;
-            key-positions = <43 45>;
-            timeout-ms = <30>;
-        };
-
-        l_ctrlshift_combo {
-            bindings = <&kp LC(LEFT_SHIFT)>;
-            key-positions = <40 38>;
-            timeout-ms = <30>;
         };
 
         Fn_layer_combo {
@@ -207,12 +87,12 @@
 
         Base {
             bindings = <
-&none  &none  &none  &none  &none      &none    &none  &none  &none      &none       &none          &none
-&none  &kp Q  &kp W  &kp E  &kp R      &kp T    &kp Y  &kp U  &kp I      &kp O       &kp P          &none
-&none  &kp A  &kp S  &kp D  &kp F      &kp G    &kp H  &kp J  &kp K      &kp L       &kp SEMICOLON  &none
-&none  &kp Z  &kp X  &kp C  &kp V      &kp B    &kp N  &kp M  &kp COMMA  &kp PERIOD  &kp SLASH      &none
-                     &none  &kp SPACE  &mo 1    &mo 2  &none
-                            &none      &none    &none
+&none  &none       &none           &none         &none        &none    &none  &none        &none             &none                &none           &none
+&none  &kp Q       &kp W           &kp E         &kp R        &kp T    &kp Y  &kp U        &kp I             &kp O                &kp P           &none
+&none  &kp A       &kp S           &kp D         &kp F        &kp G    &kp H  &kp J        &kp K             &kp L                &kp SEMICOLON   &none
+&none  &mt LWIN Z  &mt LEFT_ALT X  &mt LSHIFT C  &mt LCTRL V  &kp B    &kp N  &mt LCTRL M  &mt LSHIFT COMMA  &mt LEFT_ALT PERIOD  &mt LWIN SLASH  &none
+                                   &none         &kp SPACE    &mo 1    &mo 2  &none
+                                                 &none        &none    &none
             >;
 
             trackball-bindings = <&tmv_coarse>;
@@ -244,21 +124,21 @@
 
         FN {
             bindings = <
-&none  &none  &none  &none   &none   &none     &none   &none   &none   &none   &none    &none
-&none  &none  &none  &none   &none   &none     &none   &kp F7  &kp F8  &kp F9  &kp F11  &none
-&none  &none  &none  &none   &none   &none     &none   &kp F4  &kp F5  &kp F6  &kp F10  &none
-&none  &none  &none  &none   &none   &none     &none   &kp F1  &kp F2  &kp F3  &kp F12  &none
-                     &trans  &trans  &trans    &trans  &trans
-                             &none   &none     &none
+&none  &none     &none         &none       &none      &none     &none   &none   &none   &none   &none    &none
+&none  &none     &none         &none       &none      &none     &none   &kp F7  &kp F8  &kp F9  &kp F11  &none
+&none  &none     &none         &none       &none      &none     &none   &kp F4  &kp F5  &kp F6  &kp F10  &none
+&none  &sk LWIN  &sk LEFT_ALT  &sk LSHIFT  &sk LCTRL  &none     &none   &kp F1  &kp F2  &kp F3  &kp F12  &none
+                               &trans      &trans     &trans    &trans  &trans
+                                           &none      &none     &none
             >;
         };
 
         Bluetooth {
             bindings = <
-&none  &none  &none  &none  &none  &none    &none  &none         &none         &none         &none        &none
-&none  &none  &none  &none  &none  &none    &none  &none         &none         &none         &none        &none
-&none  &none  &none  &none  &none  &none    &none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_CLR   &none
-&none  &none  &none  &none  &none  &none    &none  &none         &none         &none         &bootloader  &none
+&none  &none  &none  &none  &none  &none    &none  &none         &none         &none         &none       &none
+&none  &none  &none  &none  &none  &none    &none  &none         &none         &none         &none       &none
+&none  &none  &none  &none  &none  &none    &none  &bt BT_SEL 0  &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_CLR  &none
+&none  &none  &none  &none  &none  &none    &none  &none         &none         &none         &none       &none
                      &none  &none  &none    &none  &none
                             &none  &none    &none
             >;
