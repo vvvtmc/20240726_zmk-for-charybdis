@@ -58,6 +58,41 @@
             key-positions = <49 27>;
             layers = <0>;
         };
+
+        T3 {
+            bindings = <&kp ENTER>;
+            key-positions = <49 26>;
+            layers = <0>;
+        };
+
+        T4 {
+            bindings = <&mkp MB2>;
+            key-positions = <49 25>;
+        };
+
+        S1 {
+            bindings = <&mkp MB1>;
+            key-positions = <31 52>;
+            layers = <0>;
+        };
+
+        S2 {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <32 52>;
+            layers = <0>;
+        };
+
+        S3 {
+            bindings = <&kp ENTER>;
+            key-positions = <52 33>;
+            layers = <0>;
+        };
+
+        S4 {
+            bindings = <&kp DELETE>;
+            key-positions = <52 34>;
+            layers = <0>;
+        };
     };
 
     macros {
