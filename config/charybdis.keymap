@@ -46,6 +46,11 @@
             key-positions = <21 22>;
             layers = <0>;
         };
+
+        T1 {
+            bindings = <&mkp MB1>;
+            key-positions = <49 28>;
+        };
     };
 
     macros {
