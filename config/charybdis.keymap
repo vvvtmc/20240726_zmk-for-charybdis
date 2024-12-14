@@ -70,30 +70,6 @@
             key-positions = <49 25>;
             layers = <0>;
         };
-
-        spc+mb1 {
-            bindings = <&mkp LCLK>;
-            key-positions = <52 31>;
-            layers = <0>;
-        };
-
-        spc+backspc {
-            bindings = <&kp BACKSPACE>;
-            key-positions = <52 32>;
-            layers = <0>;
-        };
-
-        spc+enter {
-            bindings = <&kp ENTER>;
-            key-positions = <52 33>;
-            layers = <0>;
-        };
-
-        spc+del {
-            bindings = <&kp DELETE>;
-            key-positions = <52 34>;
-            layers = <0>;
-        };
     };
 
     macros {
