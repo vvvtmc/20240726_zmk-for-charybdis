@@ -46,6 +46,54 @@
             key-positions = <21 22>;
             layers = <0>;
         };
+
+        T+Lclick {
+            bindings = <&mkp LCLK>;
+            key-positions = <49 28>;
+            layers = <0>;
+        };
+
+        T+backspc {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <49 27>;
+            layers = <0>;
+        };
+
+        T+enter {
+            bindings = <&kp ENTER>;
+            key-positions = <49 26>;
+            layers = <0>;
+        };
+
+        T+mb2 {
+            bindings = <&mkp MB2>;
+            key-positions = <49 25>;
+            layers = <0>;
+        };
+
+        spc+mb1 {
+            bindings = <&mkp LCLK>;
+            key-positions = <52 31>;
+            layers = <0>;
+        };
+
+        spc+backspc {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <52 32>;
+            layers = <0>;
+        };
+
+        spc+enter {
+            bindings = <&kp ENTER>;
+            key-positions = <52 33>;
+            layers = <0>;
+        };
+
+        spc+del {
+            bindings = <&kp DELETE>;
+            key-positions = <52 34>;
+            layers = <0>;
+        };
     };
 
     macros {
