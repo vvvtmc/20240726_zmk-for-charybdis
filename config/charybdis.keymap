@@ -52,6 +52,12 @@
             key-positions = <49 28>;
             layers = <0>;
         };
+
+        T2 {
+            bindings = <&kp BACKSPACE>;
+            key-positions = <49 27>;
+            layers = <0>;
+        };
     };
 
     macros {
