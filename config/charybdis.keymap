@@ -50,6 +50,7 @@
         T1 {
             bindings = <&mkp MB1>;
             key-positions = <49 28>;
+            layers = <0>;
         };
     };
 
