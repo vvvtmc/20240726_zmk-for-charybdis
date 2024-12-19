@@ -99,11 +99,6 @@
             bindings = <&sl 3>;
             key-positions = <49 52>;
         };
-
-        thumbs_to_layer_3 {
-            bindings = <&sl 3>;
-            key-positions = <49 52>;
-        };
     };
 
     macros {
