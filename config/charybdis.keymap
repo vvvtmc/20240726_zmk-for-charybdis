@@ -103,7 +103,6 @@
         thumbs_to_layer_3 {
             bindings = <&sl 3>;
             key-positions = <49 52>;
-            layers = <0>;
         };
     };
 
