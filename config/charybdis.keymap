@@ -148,7 +148,7 @@
             bindings = <
 &none               &none       &none           &none           &none        &none                  &none                   &none        &none         &none           &none       &none
 &none               &kp J       &kp G           &kp M           &kp P        &none                  &none                   &kp V        &kp W         &kp B           &kp Q       &none
-&mt SQT UNDERSCORE  &kp R       &kp S           &kp N           &kp D        &mt SEMICOLON COMMA    &mt EXCLAMATION PERIOD  &kp A        &kp E         &kp I           &kp H       &mt DOUBLE_QUOTES QUESTION
+&mt SQT UNDERSCORE  &kp R       &kp S           &kp N           &kp D        &mt SEMICOLON COMMA    &mt EXCLAMATION PERIOD  &kp A        &kp E         &kp I           &kp H       &none
 &none               &mt LWIN X  &mt LEFT_ALT F  &mt LSHIFT L    &mt LCTRL C  &none                  &none                   &mt LCTRL U  &mt LSHIFT O  &mt LEFT_ALT Y  &mt LWIN K  &none
                                                 &sk LEFT_SHIFT  &lt 1 T      &mo 1                  &mo 2                   &lt 2 SPACE
                                                                 &none        &none                  &none
