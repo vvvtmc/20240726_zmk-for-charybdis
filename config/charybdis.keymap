@@ -30,79 +30,16 @@
             timeout-ms = <30>;
         };
 
-        Bluetooth_layer {
+        btLoader {
             bindings = <&bootloader>;
             key-positions = <13 22>;
             timeout-ms = <30>;
             layers = <2>;
         };
 
-        Fn_layer_combo {
-            bindings = <&sl 3>;
-            key-positions = <50 51>;
-        };
-
         z {
             bindings = <&kp Z>;
             key-positions = <21 22>;
-            layers = <0>;
-        };
-
-        T1 {
-            bindings = <&mkp MB1>;
-            key-positions = <49 28>;
-            layers = <0>;
-        };
-
-        T2 {
-            bindings = <&kp BACKSPACE>;
-            key-positions = <49 27>;
-            layers = <0>;
-        };
-
-        T3 {
-            bindings = <&kp ENTER>;
-            key-positions = <49 26>;
-            layers = <0>;
-        };
-
-        T4 {
-            bindings = <&mkp MB2>;
-            key-positions = <49 25>;
-        };
-
-        S1 {
-            bindings = <&mkp MB1>;
-            key-positions = <31 52>;
-            layers = <0>;
-        };
-
-        S2 {
-            bindings = <&kp BACKSPACE>;
-            key-positions = <32 52>;
-            layers = <0>;
-        };
-
-        S3 {
-            bindings = <&kp ENTER>;
-            key-positions = <52 33>;
-            layers = <0>;
-        };
-
-        S4 {
-            bindings = <&kp DELETE>;
-            key-positions = <52 34>;
-            layers = <0>;
-        };
-
-        layer3 {
-            bindings = <&sl 3>;
-            key-positions = <49 52>;
-        };
-
-        thumbs_to_layer_3 {
-            bindings = <&sl 3>;
-            key-positions = <49 52>;
             layers = <0>;
         };
     };
@@ -165,10 +102,10 @@
 
         NUM {
             bindings = <
-&none        &none      &none         &none          &none      &none        &none      &none               &none                &none                  &none            &none
-&none        &kp SLASH  &kp ASTERISK  &kp MINUS      &kp PLUS   &none        &none      &kp NUMBER_7        &kp NUMBER_8         &kp NUMBER_9           &kp PERCENT      &none
-&small_para  &mkp MB2   &kp ENTER     &kp BACKSPACE  &mkp MB1   &mid_brkt    &kp EQUAL  &kp NUMBER_4        &kp N5               &kp NUMBER_6           &kp NUMBER_0     &big_brkt
-&none        &kp LWIN   &kp LEFT_ALT  &kp LSHIFT     &kp LCTRL  &none        &none      &mt LCTRL NUMBER_1  &mt LSHIFT NUMBER_2  &mt LEFT_ALT NUMBER_3  &mt LWIN PERIOD  &none
+&none        &none      &none         &none          &none      &none        &none      &none           &none         &none         &none         &none
+&none        &kp SLASH  &kp ASTERISK  &kp MINUS      &kp PLUS   &none        &none      &kp NUMBER_7    &kp NUMBER_8  &kp NUMBER_9  &kp PERCENT   &none
+&small_para  &mkp MB2   &kp ENTER     &kp BACKSPACE  &mkp MB1   &mid_brkt    &kp EQUAL  &kp NUMBER_4    &kp N5        &kp NUMBER_6  &kp NUMBER_0  &big_brkt
+&none        &kp LWIN   &kp LEFT_ALT  &kp LSHIFT     &kp LCTRL  &none        &none      &kp NUMBER_1    &kp NUMBER_2  &kp NUMBER_3  &kp PERIOD    &none
                                       &trans         &trans     &trans       &trans     &mt LA(F4) ESC
                                                      &none      &none        &none
             >;
@@ -180,12 +117,12 @@
 
         NAV {
             bindings = <
-&none   &none              &none                 &none                 &none                &none                &none            &none          &none          &none         &none          &none
-&none   &kp LC(MINUS)      &kp LC(PG_UP)         &kp LC(TAB)           &kp LC(EQUAL)        &none                &none            &kp BACKSLASH  &kp GRAVE      &none         &kp LA(LS(D))  &none
-&trans  &kp LEFT_ARROW     &kp UP_ARROW          &kp DOWN_ARROW        &kp RIGHT_ARROW      &kp C_VOLUME_DOWN    &kp C_VOLUME_UP  &mkp MB1       &kp BACKSPACE  &kp ENTER     &kp DELETE     &trans
-&none   &mt LEFT_WIN HOME  &mt LEFT_ALT PAGE_UP  &mt LSHIFT PAGE_DOWN  &mt LCTRL END        &none                &none            &sk LCTRL      &sk LSHIFT     &sk LEFT_ALT  &sk LWIN       &none
-                                                 &trans                &mt LA(LC(TAB)) TAB  &trans               &trans           &trans
-                                                                       &none                &none                &none
+&none   &none           &none          &none           &none                &none                &none            &none      &none          &none         &none          &none
+&none   &kp LC(MINUS)   &kp LC(PG_UP)  &kp LC(TAB)     &kp LC(EQUAL)        &none                &none            &none      &none          &none         &kp LA(LS(D))  &none
+&trans  &kp LEFT_ARROW  &kp UP_ARROW   &kp DOWN_ARROW  &kp RIGHT_ARROW      &kp C_VOLUME_DOWN    &kp C_VOLUME_UP  &mkp MB1   &kp BACKSPACE  &kp ENTER     &kp DELETE     &trans
+&none   &kp HOME        &kp PAGE_UP    &kp PAGE_DOWN   &kp END              &none                &none            &kp LCTRL  &kp LSHIFT     &kp LEFT_ALT  &kp LWIN       &none
+                                       &trans          &mt LA(LC(TAB)) TAB  &trans               &trans           &trans
+                                                       &none                &none                &none
             >;
         };
 
