@@ -1,6 +1,7 @@
 #include <dt-bindings/zmk/mouse.h>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/pointing.h>
 
 &lt {
     tapping-term-ms = <200>;
@@ -22,12 +23,6 @@
     combos {
         compatible = "zmk,combos";
 
-        princ_combo {
-            bindings = <&princ1>;
-            key-positions = <19 20 21>;
-            timeout-ms = <30>;
-        };
-
         btLoader {
             bindings = <&bootloader>;
             key-positions = <13 22>;
@@ -39,6 +34,26 @@
             bindings = <&kp Z>;
             key-positions = <21 22>;
             layers = <0>;
+        };
+
+        meh-a {
+            bindings = <&kp LS(LA(LC(A)))>;
+            key-positions = <28 31>;
+        };
+
+        meh-e {
+            bindings = <&kp LS(LA(LC(E)))>;
+            key-positions = <27 32>;
+        };
+
+        meh-i {
+            bindings = <&kp LS(LA(LC(I)))>;
+            key-positions = <26 33>;
+        };
+
+        meh-h {
+            bindings = <&kp LS(LA(LC(H)))>;
+            key-positions = <25 34>;
         };
     };
 
