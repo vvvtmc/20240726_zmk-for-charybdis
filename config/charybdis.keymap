@@ -37,7 +37,7 @@
         };
 
         meh-a {
-            bindings = <&kp LC(F12)>;
+            bindings = <&kp LC(LA(LS(A)))>;
             key-positions = <31 32 33>;
         };
 
@@ -64,43 +64,6 @@
         esc {
             bindings = <&mt LA(F4) ESCAPE>;
             key-positions = <40 39 38>;
-        };
-    };
-
-    macros {
-        small_para: small_para {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&none &kp LPAR &kp RPAR &kp LEFT>;
-            label = "SMALL_PARA";
-        };
-
-        mid_brkt: mid_brkt {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&none &kp LBKT &kp RIGHT_BRACKET &kp LEFT>;
-            label = "MID_BRKT";
-        };
-
-        double_quote: new_macro {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&none &kp DQT &kp DQT &kp LEFT_ARROW>;
-            label = "NEW_MACRO";
-        };
-
-        big_brkt: big_brkt {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&none &kp LEFT_BRACE &kp RIGHT_BRACE &kp LEFT>;
-            label = "BIG_BRKT";
-        };
-
-        princ1: princ1 {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&none &kp N6 &kp N6 &kp N8 &kp N8 &kp KP_ENTER>;
-            label = "PRINC1";
         };
     };
 
