@@ -55,6 +55,16 @@
             bindings = <&kp LS(LA(LC(H)))>;
             key-positions = <25 26 27>;
         };
+
+        alt-tab {
+            bindings = <&mt LA(LC(TAB)) TAB>;
+            key-positions = <43 44 45>;
+        };
+
+        esc {
+            bindings = <&mt LA(F4) ESCAPE>;
+            key-positions = <40 39 38>;
+        };
     };
 
     macros {
