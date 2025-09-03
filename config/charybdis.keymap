@@ -1,6 +1,7 @@
 #include <dt-bindings/zmk/mouse.h>
 #include <behaviors.dtsi>
 #include <dt-bindings/zmk/keys.h>
+#include <dt-bindings/zmk/pointing.h>
 
 &lt {
     tapping-term-ms = <200>;
@@ -37,38 +38,26 @@
 
         meh-a {
             bindings = <&kp LC(F12)>;
-            key-positions = <28 31>;
+            key-positions = <31 32 33>;
         };
 
         meh-e {
             bindings = <&kp LS(LA(LC(E)))>;
-            key-positions = <27 32>;
+            key-positions = <27 28 26>;
         };
 
         meh-i {
             bindings = <&kp LS(LA(LC(I)))>;
-            key-positions = <26 33>;
+            key-positions = <33 34 32>;
         };
 
         meh-h {
             bindings = <&kp LS(LA(LC(H)))>;
-            key-positions = <25 34>;
-        };
-
-        meh-f12 {
-            bindings = <&kp F12>;
-            key-positions = <16 19>;
+            key-positions = <25 26 27>;
         };
     };
 
     macros {
-        princ: princ {
-            compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&none &kp EXCL &kp AT &kp POUND &kp DLLR &kp PRCNT &kp CARET &kp N1 &kp N2 &kp N3 &kp LS(P) &kp R &kp I &kp N &kp C &kp RET>;
-            label = "PRINC";
-        };
-
         small_para: small_para {
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
